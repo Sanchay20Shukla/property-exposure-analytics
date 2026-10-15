@@ -1,5 +1,7 @@
 # Property Exposure Analytics & Geospatial Risk Assessment
 
+**[Open the live Streamlit dashboard](https://sanchay-property-exposure-atlas.streamlit.app/)** — explore exposure charts, geographic maps, concentration tables and data-quality results directly in your browser. No installation or sign-in required.
+
 **[View the Working Model — charts, map and validation results](Working%20Model.md)**
 
 ![Working model chart preview](docs/images/exposure-overview.png)

@@ -1,5 +1,11 @@
 # Working Model — Property Exposure Analytics
 
+## Open the live website
+
+**[Launch the interactive Property Exposure Atlas](https://sanchay-property-exposure-atlas.streamlit.app/)**
+
+Explore the dashboard directly in your browser, including city and occupancy filters, property locations, historical hazard overlays, geographic concentrations and data-quality exceptions. No installation or sign-in required. The property portfolio is synthetic; hazard data comes from the USGS historical Ridgecrest ShakeMap. If the hosting service has put the app to sleep, allow it to wake up.
+
 This page shows the results of an executed Python and GeoPandas pipeline. Review the charts directly here, then explore the code, source data and validation outputs. Property records are **synthetic**; shaking data comes from **USGS's historical 2019 Ridgecrest earthquake ShakeMap**.
 
 | Accepted properties | Total insured value | TIV in historical MMI VI+ | Row reconciliation |
@@ -25,7 +31,7 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-The repository includes generated outputs and a cached hazard snapshot, so the dashboard can open without rerunning the pipeline. The dashboard supports city and occupancy filters, an interactive property map, hazard overlays, concentration tables, CSV downloads and a data-quality exception register. Map tiles require internet access. **This is a locally runnable dashboard; no publicly hosted app is claimed.**
+The repository includes generated outputs and a cached hazard snapshot, so the dashboard can open without rerunning the pipeline. The dashboard supports city and occupancy filters, an interactive property map, hazard overlays, concentration tables, CSV downloads and a data-quality exception register. Map tiles require internet access. Run it locally using the commands above, or use the public app linked at the top.
 
 For the full Leaflet map, download the repository and open [`outputs/exposure_map.html`](outputs/exposure_map.html) in a browser. GitHub's file viewer shows HTML source rather than running the map.
 
