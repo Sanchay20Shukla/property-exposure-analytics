@@ -1,0 +1,2 @@
+# Preserve the byte-level provenance hash of the downloaded USGS source.
+data/raw/ridgecrest_grid.xml -text
