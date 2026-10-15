@@ -1,0 +1,25 @@
+city,band,occupancy,properties,tiv_usd
+Bakersfield,Below V,Commercial,84,96646000.0
+Bakersfield,Below V,Industrial,45,39359000.0
+Bakersfield,Below V,Residential,215,217254000.0
+Lancaster,Below V,Commercial,95,115982000.0
+Lancaster,Below V,Industrial,36,47567000.0
+Lancaster,Below V,Residential,229,255857000.0
+Los Angeles,Below V,Commercial,136,168446000.0
+Los Angeles,Below V,Industrial,73,67584000.0
+Los Angeles,Below V,Residential,406,458422000.0
+Ridgecrest,Below V,Commercial,1,189000.0
+Ridgecrest,Below V,Industrial,1,431000.0
+Ridgecrest,Below V,Residential,1,1777000.0
+Ridgecrest,V,Commercial,27,28812000.0
+Ridgecrest,V,Industrial,10,16448000.0
+Ridgecrest,V,Residential,62,75606000.0
+Ridgecrest,VI,Commercial,62,91075000.0
+Ridgecrest,VI,Industrial,21,26399000.0
+Ridgecrest,VI,Residential,135,126960000.0
+Ridgecrest,VII+,Commercial,108,108883000.0
+Ridgecrest,VII+,Industrial,36,33048000.0
+Ridgecrest,VII+,Residential,277,353436000.0
+San Bernardino,Below V,Commercial,94,78561000.0
+San Bernardino,Below V,Industrial,33,49563000.0
+San Bernardino,Below V,Residential,252,259663000.0

@@ -1,0 +1,266 @@
+{
+  "name": "PropertyExposure",
+  "compatibilityLevel": 1606,
+  "model": {
+    "culture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "Properties",
+        "columns": [
+          {
+            "name": "property_id",
+            "dataType": "string",
+            "sourceColumn": "property_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "longitude",
+            "dataType": "double",
+            "sourceColumn": "longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "latitude",
+            "dataType": "double",
+            "sourceColumn": "latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "occupancy",
+            "dataType": "string",
+            "sourceColumn": "occupancy",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "construction",
+            "dataType": "string",
+            "sourceColumn": "construction",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year_built",
+            "dataType": "double",
+            "sourceColumn": "year_built",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tiv_usd",
+            "dataType": "double",
+            "sourceColumn": "tiv_usd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_row",
+            "dataType": "double",
+            "sourceColumn": "source_row",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "issues",
+            "dataType": "string",
+            "sourceColumn": "issues",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "band",
+            "dataType": "string",
+            "sourceColumn": "band",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cell_id",
+            "dataType": "string",
+            "sourceColumn": "cell_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Properties",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(OutputFolder & \"/properties.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Selected = Table.SelectColumns(Headers, {\"property_id\", \"city\", \"longitude\", \"latitude\", \"occupancy\", \"construction\", \"year_built\", \"tiv_usd\", \"source_row\", \"issues\", \"band\", \"cell_id\"}),",
+                "    Typed = Table.TransformColumnTypes(Selected, {{\"property_id\", type text}, {\"city\", type text}, {\"longitude\", type number}, {\"latitude\", type number}, {\"occupancy\", type text}, {\"construction\", type text}, {\"year_built\", type number}, {\"tiv_usd\", type number}, {\"source_row\", type number}, {\"issues\", type text}, {\"band\", type text}, {\"cell_id\", type text}}, \"en-US\")",
+                "in Typed"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Accepted Properties",
+            "expression": "COUNTROWS(Properties)",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Total Insured Value",
+            "expression": "SUM(Properties[tiv_usd])",
+            "formatString": "$#,0"
+          },
+          {
+            "name": "MMI VI Plus TIV",
+            "expression": "CALCULATE([Total Insured Value], Properties[band] IN {\"VI\", \"VII+\"})",
+            "formatString": "$#,0"
+          },
+          {
+            "name": "Quarantined Rows",
+            "expression": "COUNTROWS(Quarantine)",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Rule Exceptions",
+            "expression": "COUNTROWS(Exceptions)",
+            "formatString": "#,0"
+          }
+        ]
+      },
+      {
+        "name": "Exceptions",
+        "columns": [
+          {
+            "name": "record_index",
+            "dataType": "double",
+            "sourceColumn": "record_index",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rule",
+            "dataType": "string",
+            "sourceColumn": "rule",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_row",
+            "dataType": "double",
+            "sourceColumn": "source_row",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "property_id",
+            "dataType": "string",
+            "sourceColumn": "property_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Exceptions",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(OutputFolder & \"/exceptions.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Selected = Table.SelectColumns(Headers, {\"record_index\", \"rule\", \"source_row\", \"property_id\"}),",
+                "    Typed = Table.TransformColumnTypes(Selected, {{\"record_index\", type number}, {\"rule\", type text}, {\"source_row\", type number}, {\"property_id\", type text}}, \"en-US\")",
+                "in Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Quarantine",
+        "columns": [
+          {
+            "name": "property_id",
+            "dataType": "string",
+            "sourceColumn": "property_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "longitude",
+            "dataType": "double",
+            "sourceColumn": "longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "latitude",
+            "dataType": "double",
+            "sourceColumn": "latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "occupancy",
+            "dataType": "string",
+            "sourceColumn": "occupancy",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "construction",
+            "dataType": "string",
+            "sourceColumn": "construction",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year_built",
+            "dataType": "double",
+            "sourceColumn": "year_built",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tiv_usd",
+            "dataType": "double",
+            "sourceColumn": "tiv_usd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_row",
+            "dataType": "double",
+            "sourceColumn": "source_row",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "issues",
+            "dataType": "string",
+            "sourceColumn": "issues",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Quarantine",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(OutputFolder & \"/quarantine.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Selected = Table.SelectColumns(Headers, {\"property_id\", \"city\", \"longitude\", \"latitude\", \"occupancy\", \"construction\", \"year_built\", \"tiv_usd\", \"source_row\", \"issues\"}),",
+                "    Typed = Table.TransformColumnTypes(Selected, {{\"property_id\", type text}, {\"city\", type text}, {\"longitude\", type number}, {\"latitude\", type number}, {\"occupancy\", type text}, {\"construction\", type text}, {\"year_built\", type number}, {\"tiv_usd\", type number}, {\"source_row\", type number}, {\"issues\", type text}}, \"en-US\")",
+                "in Typed"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "OutputFolder",
+        "kind": "m",
+        "expression": "\"C:/Users/rajee/Documents/ChatGPT/Finshield/property-exposure-analytics/outputs\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ]
+  }
+}

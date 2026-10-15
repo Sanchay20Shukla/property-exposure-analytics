@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "exceptions",
+  "position": {
+    "x": 20,
+    "y": 160,
+    "width": 600,
+    "height": 560,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Exceptions"
+                    }
+                  },
+                  "Property": "rule"
+                }
+              },
+              "queryRef": "Exceptions.rule",
+              "nativeQueryRef": "rule"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Properties"
+                    }
+                  },
+                  "Property": "Rule Exceptions"
+                }
+              },
+              "queryRef": "Properties.Rule Exceptions",
+              "nativeQueryRef": "Rule Exceptions"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

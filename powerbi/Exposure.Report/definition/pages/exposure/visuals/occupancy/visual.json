@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "occupancy",
+  "position": {
+    "x": 350,
+    "y": 170,
+    "width": 300,
+    "height": 100,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "slicer",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Properties"
+                    }
+                  },
+                  "Property": "occupancy"
+                }
+              },
+              "queryRef": "Properties.occupancy",
+              "nativeQueryRef": "occupancy"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

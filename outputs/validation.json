@@ -1,0 +1,19 @@
+{
+  "raw_rows": 2521,
+  "duplicate_rows_removed": 20,
+  "quarantined_rows": 62,
+  "accepted_rows": 2439,
+  "reconciliation_difference": 0,
+  "accepted_tiv_usd": 2717968000.0,
+  "scenario_mmi_vi_plus_tiv_usd": 739801000.0,
+  "rule_counts": {
+    "outside_california_study_extent": 30,
+    "invalid_coordinate": 25,
+    "invalid_tiv": 10,
+    "invalid_occupancy": 10,
+    "missing_property_id": 5,
+    "invalid_year": 5,
+    "conflicting_property_id": 2
+  },
+  "source_sha256": "f4fbcf36e9098963ddc2ea82656974c268b50df5dfdb49b9bf9ffae72ea8e306"
+}

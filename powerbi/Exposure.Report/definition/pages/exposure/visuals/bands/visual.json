@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "bands",
+  "position": {
+    "x": 20,
+    "y": 290,
+    "width": 610,
+    "height": 450,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Properties"
+                    }
+                  },
+                  "Property": "band"
+                }
+              },
+              "queryRef": "Properties.band",
+              "nativeQueryRef": "band"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Properties"
+                    }
+                  },
+                  "Property": "Total Insured Value"
+                }
+              },
+              "queryRef": "Properties.Total Insured Value",
+              "nativeQueryRef": "Total Insured Value"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

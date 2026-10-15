@@ -1,0 +1,9 @@
+{
+  "url": "https://earthquake.usgs.gov/product/shakemap/ci38457511/atlas/1594160054783/download/grid.xml",
+  "retrieved_utc": "2026-10-15T16:35:05.922474+00:00",
+  "sha256": "f4fbcf36e9098963ddc2ea82656974c268b50df5dfdb49b9bf9ffae72ea8e306",
+  "event": "ci38457511",
+  "scenario": "2019-07-06 Ridgecrest M7.1",
+  "provider": "USGS ShakeMap Atlas",
+  "property_data": "synthetic, seed 42"
+}

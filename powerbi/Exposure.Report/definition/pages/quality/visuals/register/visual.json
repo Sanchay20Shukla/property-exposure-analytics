@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "register",
+  "position": {
+    "x": 650,
+    "y": 160,
+    "width": 610,
+    "height": 560,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quarantine"
+                    }
+                  },
+                  "Property": "source_row"
+                }
+              },
+              "queryRef": "Quarantine.source_row",
+              "nativeQueryRef": "source_row"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quarantine"
+                    }
+                  },
+                  "Property": "property_id"
+                }
+              },
+              "queryRef": "Quarantine.property_id",
+              "nativeQueryRef": "property_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quarantine"
+                    }
+                  },
+                  "Property": "issues"
+                }
+              },
+              "queryRef": "Quarantine.issues",
+              "nativeQueryRef": "issues"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

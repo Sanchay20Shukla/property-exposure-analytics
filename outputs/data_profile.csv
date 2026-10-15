@@ -1,0 +1,9 @@
+column,dtype,missing_rows,distinct_non_null,missing_share
+property_id,object,5,2495,0.0019833399444664813
+city,object,0,5,0.0
+longitude,float64,0,2491,0.0
+latitude,float64,10,2486,0.003966679888932963
+occupancy,object,10,3,0.003966679888932963
+construction,object,0,3,0.0
+year_built,int64,0,86,0.0
+tiv_usd,float64,0,1472,0.0

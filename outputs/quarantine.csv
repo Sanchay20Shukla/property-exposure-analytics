@@ -1,0 +1,63 @@
+property_id,city,longitude,latitude,occupancy,construction,year_built,tiv_usd,source_row,issues
+P00000,Lancaster,-118.19513250286715,,Commercial,Masonry,1979,1463000.0,2,invalid_coordinate;outside_california_study_extent
+P00001,Los Angeles,-118.14772409541115,,Residential,Masonry,1979,159000.0,3,invalid_coordinate;outside_california_study_extent
+P00002,San Bernardino,-117.3542104584052,,Residential,Masonry,1970,96000.0,4,invalid_coordinate;outside_california_study_extent
+P00003,Bakersfield,-118.95506429941383,,Residential,Concrete,1985,1637000.0,5,invalid_coordinate;outside_california_study_extent
+P00004,Ridgecrest,-117.7192640785618,,Residential,Wood,1967,774000.0,6,invalid_coordinate;outside_california_study_extent
+P00005,San Bernardino,-117.17048735782133,,Industrial,Masonry,1968,1059000.0,7,invalid_coordinate;outside_california_study_extent
+P00006,Lancaster,-118.37108613544369,,Residential,Wood,2006,424000.0,8,invalid_coordinate;outside_california_study_extent
+P00007,Lancaster,-118.30112956800474,,Residential,Wood,1961,165000.0,9,invalid_coordinate;outside_california_study_extent
+P00008,Ridgecrest,-117.6885532910344,,Residential,Wood,1967,202000.0,10,invalid_coordinate;outside_california_study_extent
+P00009,Los Angeles,-118.32433059517854,,Industrial,Concrete,1951,503000.0,11,invalid_coordinate;outside_california_study_extent
+P00010,Los Angeles,200.0,34.208700519782774,Residential,Masonry,1999,185000.0,12,invalid_coordinate;outside_california_study_extent
+P00011,San Bernardino,200.0,34.11193552983312,Commercial,Concrete,2000,897000.0,13,invalid_coordinate;outside_california_study_extent
+P00012,Bakersfield,200.0,35.31801208120523,Commercial,Concrete,1997,416000.0,14,invalid_coordinate;outside_california_study_extent
+P00013,Lancaster,200.0,34.76010028880227,Residential,Masonry,1954,794000.0,15,invalid_coordinate;outside_california_study_extent
+P00014,Los Angeles,200.0,34.054377690673704,Residential,Concrete,1978,771000.0,16,invalid_coordinate;outside_california_study_extent
+P00015,Ridgecrest,200.0,35.64540565410047,Residential,Wood,1964,972000.0,17,invalid_coordinate;outside_california_study_extent
+P00016,Bakersfield,200.0,35.33639176477429,Residential,Concrete,2004,1088000.0,18,invalid_coordinate;outside_california_study_extent
+P00017,Ridgecrest,200.0,35.51425138630767,Commercial,Wood,1968,468000.0,19,invalid_coordinate;outside_california_study_extent
+P00018,Lancaster,200.0,34.68570103040008,Commercial,Masonry,1975,793000.0,20,invalid_coordinate;outside_california_study_extent
+P00019,Bakersfield,200.0,35.35628133983943,Residential,Concrete,1978,836000.0,21,invalid_coordinate;outside_california_study_extent
+P00020,Lancaster,-118.13714739639887,34.791755049215645,Residential,Concrete,2004,-100.0,22,invalid_tiv
+P00021,Los Angeles,-118.07467165164702,34.0497299706595,Residential,Wood,1999,-100.0,23,invalid_tiv
+P00022,San Bernardino,-117.19216207133941,34.025787966447986,Residential,Concrete,2009,-100.0,24,invalid_tiv
+P00023,San Bernardino,-117.19808534567287,34.01856101714076,Commercial,Wood,1976,-100.0,25,invalid_tiv
+P00024,Lancaster,-118.01912080766942,34.955276905287185,Commercial,Concrete,2009,-100.0,26,invalid_tiv
+P00025,Ridgecrest,-117.68465006655657,35.35689478110311,Commercial,Masonry,2014,-100.0,27,invalid_tiv
+P00026,Los Angeles,-118.30576875198938,34.19782501611471,Residential,Wood,1984,-100.0,28,invalid_tiv
+P00027,Ridgecrest,-117.60363078555697,35.649869631841,Residential,Concrete,1997,-100.0,29,invalid_tiv
+P00028,Ridgecrest,-117.54895979728542,35.67813441270981,Residential,Concrete,2017,-100.0,30,invalid_tiv
+P00029,Bakersfield,-118.87387297750585,35.480330841197635,Industrial,Wood,2011,-100.0,31,invalid_tiv
+P00030,Lancaster,-117.96739594567157,34.73305553006875,,Wood,1963,1126000.0,32,invalid_occupancy
+P00031,San Bernardino,-117.18136887182074,34.073144751229705,,Wood,2000,352000.0,33,invalid_occupancy
+P00032,Los Angeles,-118.31217529738707,34.254812116850275,,Masonry,1977,261000.0,34,invalid_occupancy
+P00033,Los Angeles,-118.21405543884127,34.14658566790348,,Masonry,1952,1634000.0,35,invalid_occupancy
+P00034,Los Angeles,-118.22515119827062,33.9796181218896,,Concrete,1971,1703000.0,36,invalid_occupancy
+P00035,Ridgecrest,-117.66868205289012,35.79231928213213,,Concrete,2023,1359000.0,37,invalid_occupancy
+P00036,Ridgecrest,-117.60337119108647,35.41462322083234,,Wood,2021,1542000.0,38,invalid_occupancy
+P00037,Los Angeles,-118.26582933478913,34.26387525512456,,Masonry,2006,524000.0,39,invalid_occupancy
+P00038,Ridgecrest,-117.695655623422,35.40394255699189,,Concrete,2024,538000.0,40,invalid_occupancy
+P00039,Bakersfield,-118.7928341337493,35.45188710117753,,Concrete,1988,345000.0,41,invalid_occupancy
+P00040,Los Angeles,34.00542987167015,-118.24840154305753,Industrial,Wood,2004,781000.0,42,invalid_coordinate;outside_california_study_extent
+P00041,Lancaster,34.62496199197285,-118.020117768425,Residential,Wood,1954,389000.0,43,invalid_coordinate;outside_california_study_extent
+P00042,Lancaster,34.75506343428691,-118.01220922905809,Residential,Wood,1965,428000.0,44,invalid_coordinate;outside_california_study_extent
+P00043,Los Angeles,34.06746177664027,-118.21063816894151,Residential,Masonry,1954,1202000.0,45,invalid_coordinate;outside_california_study_extent
+P00044,Lancaster,34.81547681442511,-118.17099616440571,Residential,Masonry,2019,2158000.0,46,invalid_coordinate;outside_california_study_extent
+P00045,Lancaster,-118.25384113985223,34.49536898478037,Industrial,Masonry,2030,983000.0,47,invalid_year
+P00046,Los Angeles,-118.16626718525289,34.12574859936805,Industrial,Wood,2030,3970000.0,48,invalid_year
+P00047,Ridgecrest,-117.6123710616986,35.668927404354164,Industrial,Masonry,2030,326000.0,49,invalid_year
+P00048,Bakersfield,-119.05846484540051,35.46449792452626,Industrial,Wood,2030,105000.0,50,invalid_year
+P00049,Ridgecrest,-117.67546697521054,35.561546372702175,Commercial,Masonry,2030,1349000.0,51,invalid_year
+,Ridgecrest,-117.70742695747064,35.862476763853095,Residential,Wood,1988,305000.0,52,missing_property_id
+,Ridgecrest,-117.87819712984546,35.67997457251549,Commercial,Concrete,1971,502000.0,53,missing_property_id
+,Lancaster,-118.35149325131485,34.67701199940124,Residential,Masonry,1966,112000.0,54,missing_property_id
+,Bakersfield,-119.0720352982185,35.11979660439841,Commercial,Wood,1983,269000.0,55,missing_property_id
+,Lancaster,-118.10331548914796,34.64439543253693,Residential,Concrete,1946,147000.0,56,missing_property_id
+P00055,Lancaster,-118.40190476110736,0.0,Commercial,Concrete,1955,427000.0,57,outside_california_study_extent
+P00056,Los Angeles,-118.06779925864133,0.0,Residential,Wood,1943,445000.0,58,outside_california_study_extent
+P00057,Bakersfield,-118.97692522712182,0.0,Residential,Wood,1953,722000.0,59,outside_california_study_extent
+P00058,Ridgecrest,-117.51062120549251,0.0,Residential,Wood,1956,2280000.0,60,outside_california_study_extent
+P00059,Ridgecrest,-117.53397175565493,0.0,Residential,Masonry,1946,1299000.0,61,outside_california_study_extent
+P00100,San Bernardino,-117.0931575087322,34.04836364871421,Residential,Concrete,1981,3728000.0,102,conflicting_property_id
+P00100,San Bernardino,-117.0931575087322,34.04836364871421,Residential,Concrete,1981,7456000.0,2522,conflicting_property_id
